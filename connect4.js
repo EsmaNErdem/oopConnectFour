@@ -87,7 +87,8 @@ class Game {
   
     const spot = document.getElementById(`${y}-${x}`);
     spot.append(piece);
-    this.playerDisplay(this.currPlayer);
+    let playerColor = this.currPlayer === this.p1 ? this.p2 : this.p1;
+    this.playerDisplay(playerColor);
   }
 
   /** endGame: announce game end */
