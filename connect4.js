@@ -92,7 +92,9 @@ class Game {
   }
 
   /** endGame: announce game end */
-  endGame(msg) {
+  endGame(msg, playersColor) {
+    const gamerDisplay = document.querySelector("#display");
+    gamerDisplay.style.backgroundColor = playersColor;
     const displayBoard = document.querySelector("#display-board")
     displayBoard.innerHTML = msg;
     const top = document.getElementById("column-top");
@@ -126,7 +128,7 @@ class Game {
     
     // check for win
     if (this.checkForWin()) {
-      return this.endGame(`Player ${this.currPlayer} won!`);
+      return this.endGame(`Player ${this.currPlayer} won!`, this.currPlayer);
     }
     
     // check for tie
