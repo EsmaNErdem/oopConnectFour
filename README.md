@@ -1,4 +1,5 @@
 # Connect Four Game
+LIVE: https://esmanerdem.github.io/oopConnectFour/
 
 ## Overview
 
@@ -42,11 +43,10 @@ To clone this repository and run the Connect Four game locally on your machine, 
 
 3. Run the following command to clone the repository:
 
-https://github.com/EsmaNErdem/connect4oo.git
+https://github.com/EsmaNErdem/oopConnectFour.git
 
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, please feel free to submit a pull request.
 
 
-LIVE: https://esmanerdem.github.io/connect4oo/

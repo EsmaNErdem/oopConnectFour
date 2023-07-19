@@ -29,7 +29,7 @@ class Game {
   makeHtmlBoard() {
     const displayBoard = document.querySelector("#display-board")
     displayBoard.innerHTML = "Start game by clicking top selected cell";
-    
+
     const gamerDisplay = document.querySelector("#display");
     gamerDisplay.style.backgroundColor = "";
 
@@ -182,8 +182,8 @@ class Player {
 
 const startButton = document.getElementById("start-button");
 startButton.addEventListener("click", () => {
-  const p1 = new Player(document.querySelector('#p1').value).color
-  const p2= new Player(document.querySelector('#p2').value).color
+  const p1 = document.querySelector('#p1').value !== '' ? new Player(document.querySelector('#p1').value).color : "red"
+  const p2= document.querySelector('#p2').value !== '' ? new Player(document.querySelector('#p2').value).color : "blue"
   let game = new Game(6,7,p1,p2);
   startButton.innerHTML = "Restart"
   game.makeBoard();
